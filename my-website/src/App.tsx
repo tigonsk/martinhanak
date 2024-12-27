@@ -103,7 +103,7 @@ function App() {
             dangerouslySetInnerHTML={{ __html: typedText }}
           ></h1>
           <div id="img-of-me-wrapper">
-            <img id="img-of-me" src="../assets/img/me.png" alt="martin" />
+            <img id="img-of-me" src="assets/img/me.png" alt="martin" />
           </div>
         </section>
 
@@ -138,7 +138,7 @@ function App() {
                 <img
                   className="institution-img"
                   src="assets/img/spsepo.png"
-                  alt="vut fit"
+                  alt="spse po"
                 />
               </a>
               <div className="left-education">
@@ -153,8 +153,8 @@ function App() {
               <a className="link-to-school" href="https://www.fit.vut.cz/.en">
                 <img
                   className="institution-img"
-                  src="/assets/img/vutfit.png"
-                  alt="spse po"
+                  src="assets/img/vutfit.png"
+                  alt="vut fit"
                 />
               </a>
               <div className="left-education">
@@ -177,7 +177,7 @@ function App() {
                 <p className="language-name">Python</p>
                 <img
                   className="skill-img"
-                  src="../assets/img/python.svg"
+                  src="assets/img/python.svg"
                   alt="python"
                 />
               </div>
@@ -185,24 +185,20 @@ function App() {
                 <p className="language-name">Java</p>
                 <img
                   className="skill-img"
-                  src="../assets/img/java.svg"
+                  src="assets/img/java.svg"
                   alt="java"
                 />
               </div>
               <div className="skill-item">
                 <p className="language-name">JavaScript</p>
-                <img
-                  className="skill-img"
-                  src="../assets/img/js.svg"
-                  alt="js"
-                />
+                <img className="skill-img" src="assets/img/js.svg" alt="js" />
               </div>
 
               <div className="skill-item">
                 <p className="language-name">Dart</p>
                 <img
                   className="skill-img-special"
-                  src="../assets/img/dart.svg"
+                  src="assets/img/dart.svg"
                   alt="dart"
                 />
               </div>
@@ -214,7 +210,7 @@ function App() {
                 <p className="language-name">Html</p>
                 <img
                   className="skill-img"
-                  src="../assets/img/html5.svg"
+                  src="assets/img/html5.svg"
                   alt="html"
                 />
               </div>
@@ -222,22 +218,18 @@ function App() {
                 <p className="language-name">Css</p>
                 <img
                   className="skill-img"
-                  src="../assets/img/css3.svg"
+                  src="assets/img/css3.svg"
                   alt="css"
                 />
               </div>
 
               <div className="skill-item">
                 <p className="language-name">Sql</p>
-                <img
-                  className="skill-img"
-                  src="../assets/img/sql.svg"
-                  alt="sql"
-                />
+                <img className="skill-img" src="assets/img/sql.svg" alt="sql" />
               </div>
             </div>
           </div>
-          <img id="image-coding" src="../assets/img/coding2.svg" alt="coding" />
+          <img id="image-coding" src="assets/img/coding2.svg" alt="coding" />
         </section>
 
         <section id="work" className="section">
@@ -252,7 +244,7 @@ function App() {
                 <div className="image-container">
                   <img
                     className="work-project-item-img"
-                    src="../assets/img/project-ds.png"
+                    src="assets/img/project-ds.png"
                     alt="nature"
                   />
                 </div>
@@ -276,7 +268,7 @@ function App() {
                 <div className="image-container">
                   <img
                     className="work-project-item-img"
-                    src="../assets/img/project-library.png"
+                    src="assets/img/project-library.png"
                     alt="library app"
                   />
                 </div>
@@ -320,7 +312,7 @@ function App() {
               <input type="submit" id="form-submit" value="Send" />
             </div>
           </form>
-          <img id="img-contact" src="../assets/img/contact.svg" alt="contact" />
+          <img id="img-contact" src="assets/img/contact.svg" alt="contact" />
         </section>
       </div>
     </>
