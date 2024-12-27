@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import React, { useEffect, useRef, useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "../public/assets/css/style.scss";
 
 function App() {
@@ -32,34 +32,26 @@ function App() {
       return () => clearTimeout(timer);
     }
   }, [currentTextIndex, currentCharIndex]);
-  function jumpToSection(sectionId: string): void {
-    let section = document.getElementById(sectionId);
-    if (section != null) {
-      section.offsetTop;
-      window.scrollTo({
-        top: section.offsetTop - 70,
-        behavior: "smooth",
-      });
-    }
-  }
   //form handling
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_8kksrcn", "template_lv61f7k", form.current, {
-        publicKey: "F5C7U01qE60SlfeqA",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm("service_8kksrcn", "template_lv61f7k", form.current, {
+          publicKey: "F5C7U01qE60SlfeqA",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    }
   };
   return (
     <>
