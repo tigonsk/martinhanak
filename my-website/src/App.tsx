@@ -126,7 +126,7 @@ function App() {
             </p>
           </div>
           <div id="img-about-wrapper">
-            <img id="img-about" src="../assets/img/coding.svg" alt="coding" />
+            <img id="img-about" src="assets/img/coding.svg" alt="coding" />
           </div>
         </section>
 
@@ -137,7 +137,7 @@ function App() {
               <a className="link-to-school" href="https://www.spse-po.sk/">
                 <img
                   className="institution-img"
-                  src="../assets/img/spsepo.png"
+                  src="assets/img/spsepo.png"
                   alt="vut fit"
                 />
               </a>
@@ -153,7 +153,7 @@ function App() {
               <a className="link-to-school" href="https://www.fit.vut.cz/.en">
                 <img
                   className="institution-img"
-                  src="../assets/img/vutfit.png"
+                  src="/assets/img/vutfit.png"
                   alt="spse po"
                 />
               </a>
