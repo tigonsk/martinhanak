@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
-import "../public/assets/css/style.scss";
+import "../dist/assets/css/style.scss";
 
 function App() {
   const texts = ["Hi!,", "I am Martin Hanák,", "Web developer."];
